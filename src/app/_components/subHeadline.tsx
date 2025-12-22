@@ -3,9 +3,9 @@ import { motion } from "motion/react";
 
 export function SubHeadline(){
   return (
-    <section className="py-16 md:py-24 md:px-10 bg-gradient-to-r from-[#0F3B48] to-[#1E4A5A]  overflow-hidden shadow-2xl">
+    <section className="py-16 md:py-24 md:px-10 bg-[#3f1b2d] overflow-hidden shadow-2xl">
                 <motion.div
-            className="text-[#F7F5EF]"
+            className="text-[#f9f9f9]"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}

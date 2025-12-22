@@ -6,7 +6,7 @@ import { WaveDivider } from "../components/WaveDivider"
 
 export function About() {
   return (
-    <section id="sobre" className="min-h-screen w-screen flex items-center justify-center bg-[#F7F5EF] overflow-hidden px-4 md:px-8 relative">
+    <section id="sobre" className="min-h-screen w-screen flex items-center justify-center bg-[#d7b189] overflow-hidden px-4 md:px-8 relative">
       <div className="container max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-16 items-center py-12 md:py-20">
         <motion.div
           className="relative w-full h-90 md:h-[500px] rounded-3xl md:rounded-br-[60px] overflow-hidden shadow-2xl order-2 md:order-1"
@@ -24,7 +24,7 @@ export function About() {
             priority
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0F3B48]/20 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#3f1b2d]/20 via-transparent to-transparent" />
         </motion.div>
 
         <motion.div 
@@ -35,13 +35,13 @@ export function About() {
           viewport={{ once: true }}
         >
           <motion.h1 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F3B48] leading-tight"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3f1b2d] leading-tight"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             Sobre mim
-            <div className="w-16 h-1 bg-gradient-to-r from-[#F7F5EF] to-[#3E5F6D] mt-4 rounded-full"></div>
+            <div className="w-16 h-1 bg-gradient-to-r from-[#F7F5EF] to-[#3f1b2d] mt-4 rounded-full"></div>
           </motion.h1>
 
           <motion.div 
@@ -50,14 +50,14 @@ export function About() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <p className="text-lg md:text-xl lg:text-2xl text-[#3E5F6D]/90 leading-relaxed md:leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#3f1b2d]/90 leading-relaxed md:leading-relaxed">
               Sou psicólogo clínico com atuação baseada em evidências, integrando 
-              <span className="font-semibold text-[#3E5F6D]"> TCC, ACT e DBT</span>.
+              <span className="font-semibold text-[#3f1b2d]"> TCC, ACT e DBT</span>.
             </p>
             
-            <p className="text-lg md:text-xl lg:text-2xl text-[#3E5F6D]/90 leading-relaxed md:leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#3f1b2d]/90 leading-relaxed md:leading-relaxed">
               Trabalho com 
-              <span className="font-semibold text-[#3E5F6D]"> regulação emocional, padrões afetivos, autoestima, 
+              <span className="font-semibold text-[#3f1b2d]"> regulação emocional, padrões afetivos, autoestima, 
               produtividade emocional e relacionamentos</span>, sempre com um olhar 
               humano, estruturado e orientado a mudanças sustentáveis.
             </p>
@@ -68,8 +68,8 @@ export function About() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#3E5F6D]/5 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <p className="relative text-lg md:text-xl lg:text-2xl text-[#3E5F6D] leading-relaxed md:leading-relaxed italic border-l-4 border-[#3E5F6D]/30 pl-4 py-2">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#3f1b2d]/5 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <p className="relative text-lg md:text-xl lg:text-2xl text-[#3f1b2d] leading-relaxed md:leading-relaxed italic border-l-4 border-[#3f1b2d]/30 pl-4 py-2">
                 Acredito em uma psicologia profunda e aplicável: 
                 nem rasa, nem inacessível. Clara, ética e transformadora.
               </p>
@@ -81,16 +81,16 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <span className="px-4 py-2 bg-[#0F3B48]/10 backdrop-blur-sm rounded-full text-[#0F3B48] text-sm font-medium border border-[#0F3B48]/20">
+              <span className="px-4 py-2 bg-[#3f1b2d]/10 backdrop-blur-sm rounded-full text-[#3f1b2d] text-sm font-medium border border-[#3f1b2d]/20">
                 TCC
               </span>
-              <span className="px-4 py-2 bg-[#0F3B48]/10 backdrop-blur-sm rounded-full text-[#0F3B48] text-sm font-medium border border-[#0F3B48]/20">
+              <span className="px-4 py-2 bg-[#3f1b2d]/10 backdrop-blur-sm rounded-full text-[#3f1b2d] text-sm font-medium border border-[#3f1b2d]/20">
                 ACT
               </span>
-              <span className="px-4 py-2 bg-[#0F3B48]/10 backdrop-blur-sm rounded-full text-[#0F3B48] text-sm font-medium border border-[#0F3B48]/20">
+              <span className="px-4 py-2 bg-[#3f1b2d]/10 backdrop-blur-sm rounded-full text-[#3f1b2d] text-sm font-medium border border-[#3f1b2d]/20">
                 DBT
               </span>
-              <span className="px-4 py-2 bg-[#0F3B48]/10 backdrop-blur-sm rounded-full text-[#0F3B48] text-sm font-medium border border-[#0F3B48]/20">
+              <span className="px-4 py-2 bg-[#3f1b2d]/10 backdrop-blur-sm rounded-full text-[#3f1b2d] text-sm font-medium border border-[#3f1b2d]/20">
                 Baseado em Evidências
               </span>
             </motion.div>
@@ -99,7 +99,7 @@ export function About() {
       </div>
 
       <div className="absolute top-20 left-10 w-32 h-32 bg-[#F7F5EF]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-[#3E5F6D]/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-[#3f1b2d]/10 rounded-full blur-3xl"></div>
 
                 
            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
@@ -110,14 +110,14 @@ export function About() {
             >
               <motion.path 
                 d="M0,60 C300,100 600,20 900,60 C1050,80 1150,40 1200,60 L1200,120 L0,120 Z" 
-                fill="#0F3B48"
+                fill="#3f1b2d"
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
                 transition={{ duration: 1.5, ease: "easeInOut" }}
               />
               <motion.path 
                 d="M0,80 C300,60 600,100 900,80 C1050,70 1150,90 1200,80 L1200,120 L0,120 Z" 
-                fill="#0F3B48"
+                fill="#3f1b2d"
                 opacity="0.5"
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 0.5 }}
