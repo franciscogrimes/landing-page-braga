@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react"
 import useEmblaCarousel from "embla-carousel-react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, Check } from "lucide-react"
 
 export function Approach() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -21,6 +21,10 @@ export function Approach() {
 
   const scrollNext = useCallback(() => {
     emblaApi?.scrollNext()
+  }, [emblaApi])
+
+  const scrollTo = useCallback((index: number) => {
+    emblaApi?.scrollTo(index)
   }, [emblaApi])
 
   const onSelect = useCallback(() => {
@@ -60,40 +64,62 @@ export function Approach() {
     },
   ]
 
+  const casos = [
+    "Ansiedade e preocupação excessiva",
+    "Depressão e desânimo",
+    "Dificuldades nos relacionamentos",
+  ]
+
+  const casos_dois = [
+    "Baixa autoestima e autocrítica",
+    "Trauma e eventos do passado",
+    "Transições de vida",
+  ]
+
+  const casos_tres = [
+    "Desregulação emocional",
+    "Perda de propósito",
+    "Conflitos internos",
+  ]
+
   return (
-    <section className="relative bg-[#F7F5EF] px-4 md:px-8 overflow-hidden">
-      <div className="grid gap-3 text-center py-16 max-w-5xl mx-auto">
-        <h2 className="text-4xl lg:text-5xl font-bold text-[#3E5F6D]">
+    <section id="abordagem" className="relative bg-[#f9f9f9] px-4 md:px-8 overflow-hidden py-16">
+      <div className="grid gap-3 text-center max-w-5xl mx-auto mb-12">
+        <h2 className="text-5xl lg:text-5xl text-center font-bold text-[#3f1b2d]">
           Minha abordagem
         </h2>
-        <p className="text-xl md:text-2xl text-[#3E5F6D] font-medium">
+        <div className="w-24 h-1 bg-[#d7b189] mx-auto mb-6" />
+
+        <p className="text-xl md:text-2xl text-gray-600 font-medium">
           Um processo técnico, profundo e prático, sustentado pela ciência.
         </p>
       </div>
 
-      <div className="relative max-w-6xl mx-auto">
+      <div className="relative max-w-6xl mx-auto md:mb-10">
         <button
           onClick={scrollPrev}
           disabled={!canScrollPrev}
-          className="md:hidden absolute z-10 left-2 top-1/2 -translate-y-1/2 bg-[#0F3B48] p-2 rounded-full disabled:opacity-30 text-[#F7F5EF]"
+          className="md:hidden absolute z-10 left-2 top-1/2 -translate-y-1/2 bg-[#d7b189] opacity-80 p-2 rounded-full disabled:opacity-30 text-[#f9f9f9] transition-all duration-300 hover:opacity-100"
         >
           <ChevronLeft />
         </button>
 
         <div ref={emblaRef} className="overflow-hidden">
           <div className="flex md:grid md:grid-cols-2 gap-6">
-            {dados.map((item) => (
+            {dados.map((item, index) => (
               <div
                 key={item.titulo}
                 className="
+                
                   min-w-full md:min-w-0
-                  bg-[#3E5F6D]
-                  text-[#F7F5EF]
+                  bg-[#3f1b2d]
+                  text-[#f9f9f9]
                   text-xl
                   p-8
                   flex flex-col gap-4
                   rounded-3xl
-                  shadow-2xl
+                  shadow-lg 
+                  hover:shadow-xl                  
                   transition-all
                   hover:-translate-y-1
                 "
@@ -112,27 +138,32 @@ export function Approach() {
         <button
           onClick={scrollNext}
           disabled={!canScrollNext}
-          className="md:hidden absolute z-10 right-2 top-1/2 -translate-y-1/2 bg-[#0F3B48] p-2 rounded-full disabled:opacity-30 text-[#F7F5EF]"
+          className="md:hidden absolute z-10 right-2 top-1/2 -translate-y-1/2 bg-[#d7b189] opacity-80 p-2 rounded-full disabled:opacity-30 text-[#f9f9f9] transition-all duration-300 hover:opacity-100"
         >
           <ChevronRight />
         </button>
+
+        <div className="flex justify-center gap-2 mt-8 md:hidden">
+          {scrollSnaps.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => scrollTo(index)}
+              className={`
+                w-2.5 h-2.5 rounded-full transition-all duration-300
+                ${selectedIndex === index 
+                  ? 'bg-[#d7b189] w-8' 
+                  : 'bg-[#d7b189]/30 hover:bg-[#d7b189]/50'
+                }
+              `}
+              aria-label={`Ir para slide ${index + 1}`}
+            />
+          ))}
+        </div>
       </div>
 
-      <div className="flex justify-center gap-2 mt-8 mb-6 md:hidden">
-        {scrollSnaps.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => emblaApi?.scrollTo(index)}
-            className={`w-2.5 h-2.5 rounded-full transition-all ${
-              index === selectedIndex
-                ? "bg-[#3E5F6D]"
-                : "bg-[#3E5F6D]/40"
-            }`}
-          />
-        ))}
-      </div>
-
-      
+     
     </section>
   )
 }
+
+export default Approach;

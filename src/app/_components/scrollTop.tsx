@@ -31,7 +31,7 @@ export function ScrollTopButton() {
     <Button
       onClick={scrollToTop}
       size="icon"
-      className={`bg-[#0F3B48] fixed bottom-6 right-6 size-10 rounded-full shadow-lg transition-opacity duration-300 cursor-pointer ${
+      className={`bg-[#3f1b2d] fixed bottom-6 right-6 size-10 rounded-full shadow-lg transition-opacity duration-300 cursor-pointer z-10 ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none "
       }`}
     >

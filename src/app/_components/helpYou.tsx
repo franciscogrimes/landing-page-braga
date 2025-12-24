@@ -1,6 +1,6 @@
 "use client"
 
-import { CiCircleCheck } from "react-icons/ci"
+import { Check } from 'lucide-react';
 import { useState, useCallback, useEffect } from "react"
 import useEmblaCarousel from "embla-carousel-react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
@@ -54,7 +54,7 @@ export function HelpYou() {
   
   const casos_tres = [
     "Entender e reorganizar padrões afetivos",
-    "Melhorar comunicação, limites e expressão emocional",
+    "Melhorar comunicação e expressão emocional",
     "Sair da autossabotagem e procrastinação emocional",
   ]
 
@@ -86,10 +86,10 @@ export function HelpYou() {
 };
 
   return (
-    <section className="h-170 md:min-h-screen w-screen bg-[#3f1b2d] px-4 md:px-8 relative overflow-hidden">
+    <section id='ajuda' className="h-180 md:min-h-screen w-screen bg-[#3f1b2d] px-4 md:px-8 relative overflow-hidden">
       
       <div className="text-center py-10">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F7F5EF]">
+        <h2 className="text-5xl md:text-4xl lg:text-5xl font-bold text-[#f9f9f9]">
           Como posso te ajudar?
         </h2>
       </div>
@@ -98,7 +98,7 @@ export function HelpYou() {
         <button
           onClick={scrollPrev}
           disabled={!canScrollPrev}
-          className="md:hidden absolute z-10 left-2 top-1/2 -translate-y-1/2 bg-[#3f1b2d] p-2 rounded-full disabled:opacity-30 text-[#F7F5EF]"
+          className="md:hidden absolute z-10 left-2 top-1/2 -translate-y-1/2 bg-[#d7b189] p-2 rounded-full disabled:opacity-30 text-[#F7F5EF]"
         >
           <ChevronLeft />
         </button>
@@ -109,10 +109,12 @@ export function HelpYou() {
               {casos.map((item) => (
                 <div
                   key={item}
-                  className="h-30 bg-[#d7b189]  text-[#F7F5EF] text-2xl mb-10 p-5 flex gap-3 items-center rounded-4xl leading-relaxed hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                  className="h-30 bg-[#f9f9f9]  text-[#3f1b2d] text-2xl mb-10 p-5 flex gap-3 items-center rounded-2xl shadow-lg hover:shadow-xl leading-relaxed hover:shadow-card transition-all duration-300 hover:-translate-y-1"
                 >
-                  <CiCircleCheck />
-                  <p>{item}</p>
+                <div className="flex-shrink-0 w-8 h-8 bg-[#d7b189] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
+                <p>{item}</p>
                 </div>
               ))}
             </div>
@@ -121,10 +123,12 @@ export function HelpYou() {
               {casos_dois.map((item) => (
                 <div
                   key={item}
-                  className="h-30 bg-[#d7b189] text-[#F7F5EF] text-2xl mb-10 p-5 flex gap-3 items-center rounded-4xl leading-relaxed hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                  className="h-30 bg-[#f9f9f9] text-[#3f1b2d] text-2xl mb-10 p-5 flex gap-3 items-center rounded-2xl shadow-lg hover:shadow-xl leading-relaxed hover:shadow-card transition-all duration-300 hover:-translate-y-1"
                 >
-                  <CiCircleCheck />
-                  <p>{item}</p>
+                <div className="flex-shrink-0 w-8 h-8 bg-[#d7b189] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
+                <p>{item}</p>
                 </div>
               ))}
             </div>
@@ -133,10 +137,12 @@ export function HelpYou() {
               {casos_tres.map((item) => (
                 <div
                   key={item}
-                  className="h-30 bg-[#d7b189] text-[#F7F5EF] text-2xl mb-10 p-5 flex gap-3 items-center rounded-4xl leading-relaxed hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                  className="h-30 bg-[#f9f9f9] text-[#3f1b2d] text-2xl mb-10 p-5 flex gap-3 items-center rounded-2xl shadow-lg hover:shadow-xl leading-relaxed hover:shadow-card transition-all duration-300 hover:-translate-y-1"
                 >
-                  <CiCircleCheck />
-                  <p>{item}</p>
+                <div className="flex-shrink-0 w-8 h-8 bg-[#d7b189] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Check className="w-5 h-5 text-white" />
+                </div>
+                <p>{item}</p>
                 </div>
               ))}
             </div>
@@ -146,7 +152,7 @@ export function HelpYou() {
         <button
           onClick={scrollNext}
           disabled={!canScrollNext}
-          className="md:hidden absolute z-10 right-2 top-1/2 -translate-y-1/2 bg-[#3f1b2d] text-[#F7F5EF] p-2 rounded-full disabled:opacity-30"
+          className="md:hidden absolute z-10 right-2 top-1/2 -translate-y-1/2 bg-[#d7b189] text-[#F7F5EF] p-2 rounded-full disabled:opacity-30"
         >
           <ChevronRight />
         </button>
