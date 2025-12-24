@@ -38,8 +38,8 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between h-20">
             <a href="#home" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#d7b189] to-[#c9a076] flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                <span className="text-[#3f1b2d] font-bold text-xl">LB</span>
+              <div className="w-12 h-12 rounded-full  flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                <img src="/logo.png" alt="logo" />
               </div>
               <div className="hidden md:block">
                 <span className="text-[#f9f9f9] font-bold text-lg block leading-tight">Lucas Braga</span>
