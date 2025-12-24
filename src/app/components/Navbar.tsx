@@ -47,10 +47,6 @@ export function Navbar() {
               </div>
             </a>
 
-        
-
-            
-
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className=" p-2 text-[#f9f9f9] hover:bg-[#f9f9f9]/10 rounded-lg transition-all duration-300"
@@ -81,7 +77,7 @@ export function Navbar() {
             isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
           }`}
         >
-          <div className="px-4 py-6 space-y-1">
+          <div className="px-4 py-6 space-y-1 md:text-center">
             {menuItems.map((item, index) => (
               <a
                 key={item.label}
