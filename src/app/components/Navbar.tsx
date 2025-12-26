@@ -18,7 +18,7 @@ export function Navbar() {
   const menuItems = [
     { label: 'Início', href: '#home' },
     { label: 'Sobre', href: '#sobre' },
-    { label: 'Como posso ajudo', href: '#ajuda' },
+    { label: 'Como posso ajudar', href: '#ajuda' },
     { label: 'Abordagem', href: '#abordagem' },
     { label: 'Para quem é', href: '#quem-e' },
     { label: 'Como Funciona', href: '#como-funciona' },
@@ -41,7 +41,7 @@ export function Navbar() {
               <div className="w-12 h-12 rounded-full  flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                 <img src="/logo.png" alt="logo" />
               </div>
-              <div className="hidden md:block">
+              <div className="md:block">
                 <span className="text-[#f9f9f9] font-bold text-lg block leading-tight">Lucas Braga</span>
                 <span className="text-[#d7b189] text-xs">Psicólogo Cínico</span>
               </div>
