@@ -10,6 +10,7 @@ import { Approach } from "./_components/approach";
 import WhoIs from "./_components/whoIs";
 import CTAFinal from "./_components/CTA";
 import Navbar from "./components/Navbar";
+import { ButtonWhats } from "./_components/buttonWhats";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
       <Products />
       <Contacts />
       <Footer /> */}
-      <ScrollTopButton />
+      <ButtonWhats/>
     </main>
   );
 }

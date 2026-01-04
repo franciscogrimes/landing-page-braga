@@ -72,7 +72,7 @@ export function Hero() {
           }`}
         >
           <a 
-            href="https://wa.me/5548996648123"
+            href="https://wa.me/554831978120"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-8 py-4 bg-[#d7b189] text-[#3f1b2d] font-semibold rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-base text-center"
@@ -118,7 +118,7 @@ export function Hero() {
           }`}
         >
           <a 
-            href="https://wa.me/5548996648123"
+            href="https://wa.me/554831978120"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-8 py-4 bg-[#d7b189] text-[#3f1b2d] font-semibold rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-lg md:text-xl text-center"

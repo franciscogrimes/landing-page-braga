@@ -5,7 +5,7 @@ import { ArrowRight, MessageCircle, Calendar, Mail, Phone } from 'lucide-react';
 
 export default function CTAFinal() {
   const formasContato = [
-    { icon: MessageCircle, texto: 'WhatsApp', link:"https://wa.me/5548996648123" },
+    { icon: MessageCircle, texto: 'WhatsApp', link:"https://wa.me/554831978120" },
     { icon: Mail, texto: 'Email', link:"mailto:contato@psilucasbraga.com" },
     { icon: Calendar, texto: 'Agenda direta', link: "https://corpora.bio/psilucasbraga"}
   ];
@@ -86,7 +86,7 @@ export default function CTAFinal() {
               className="mb-16"
             >
               <a
-                href="https://wa.me/5548996648123"
+                href="https://wa.me/554831978120"
                 target='blank'
                 className="group inline-flex items-center gap-3 bg-[#d7b189] hover:bg-[#c9a378] text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl hover:shadow-[#d7b189]/50 transition-all duration-300 hover:scale-105"
               >
