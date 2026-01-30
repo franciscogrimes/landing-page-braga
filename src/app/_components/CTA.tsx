@@ -19,12 +19,13 @@ export default function CTAFinal() {
           <path d="M0,0 Q600,60 1200,0 L1200,120 L0,120 Z" fill="#ffffff"></path>
         </svg>
       </div>
-      <div style={{ width: '1080px', height: '1080px', position: 'absolute',}}>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
   <Particles
+    className="w-full h-full"
     particleCount={200}
     particleSpread={10}
     speed={0.1}
-    particleColors={["#ffffff","#ffffff","#ffffff"]}
+    particleColors={["#ffffff", "#ffffff", "#ffffff"]}
     moveParticlesOnHover={false}
     particleHoverFactor={1}
     alphaParticles={false}

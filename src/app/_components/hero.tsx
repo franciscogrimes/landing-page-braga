@@ -14,21 +14,22 @@ export function Hero() {
     <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#3f1b2d] shadow-2xl">
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
   
-  <div style={{ width: '1080px', height: '1080px', position: 'relative' }}>
-  <Particles
-    particleCount={200}
-    particleSpread={10}
-    speed={0.1}
-    particleColors={["#ffffff","#ffffff","#ffffff"]}
-    moveParticlesOnHover={false}
-    particleHoverFactor={1}
-    alphaParticles={false}
-    particleBaseSize={100}
-    sizeRandomness={1}
-    cameraDistance={20}
-    disableRotation={false}
-  />
-</div>
+    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <Particles
+        className="w-full h-full"
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleColors={["#ffffff", "#ffffff", "#ffffff"]}
+        moveParticlesOnHover={false}
+        particleHoverFactor={1}
+        alphaParticles={false}
+        particleBaseSize={100}
+        sizeRandomness={1}
+        cameraDistance={20}
+        disableRotation={false}
+      />
+    </div>
 
   <div className="absolute top-20 right-10 w-64 h-64 bg-[#d7b189]/5 rounded-full blur-3xl animate-pulse" />
 
