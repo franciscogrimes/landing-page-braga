@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, MessageCircle, Calendar, Mail, Phone } from 'lucide-react';
+import Particles from '../../components/Particles.jsx'
+
 
 export default function CTAFinal() {
   const formasContato = [
@@ -17,6 +19,21 @@ export default function CTAFinal() {
           <path d="M0,0 Q600,60 1200,0 L1200,120 L0,120 Z" fill="#ffffff"></path>
         </svg>
       </div>
+      <div style={{ width: '1080px', height: '1080px', position: 'absolute',}}>
+  <Particles
+    particleCount={200}
+    particleSpread={10}
+    speed={0.1}
+    particleColors={["#ffffff","#ffffff","#ffffff"]}
+    moveParticlesOnHover={false}
+    particleHoverFactor={1}
+    alphaParticles={false}
+    particleBaseSize={100}
+    sizeRandomness={1}
+    cameraDistance={20}
+    disableRotation={false}
+  />
+</div>
 
       <div className="absolute inset-0 overflow-hidden">
         <motion.div

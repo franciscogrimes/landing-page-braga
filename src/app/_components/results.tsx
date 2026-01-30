@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Heart, Shield, Sparkles, Users, Eye } from 'lucide-react';
+import { Heart, Shield, Sparkles, Users, Eye, Calendar, ArrowRight } from 'lucide-react';
 
 export default function Results() {
   const resultados = [
@@ -38,15 +38,14 @@ export default function Results() {
   ];
 
   return (
-    <section id='resultados' className="relative py-24 bg-gradient-to-b from-[#f9f9f9] to-white overflow-hidden">
-      {/* Divider SVG superior */}
+    <section id='resultados' className="relative py-12 bg-gradient-to-b from-[#f9f9f9] to-white overflow-hidden">
+  
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-20">
           <path d="M0,0 Q600,60 1200,0 L1200,120 L0,120 Z" fill="#ffffff"></path>
         </svg>
       </div>
 
-      {/* Background animado */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#d7b189]/5 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#3f1b2d]/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
@@ -109,7 +108,6 @@ export default function Results() {
           </div>
         </div>
 
-        {/* Destaque final */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -117,20 +115,31 @@ export default function Results() {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-gradient-to-br from-[#3f1b2d] via-[#4d2438] to-[#5a2a40] p-12 rounded-3xl shadow-2xl relative overflow-hidden">
-            {/* Padrão decorativo */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d7b189]/10 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
-            
-            <div className="relative z-10 text-center">
-              <h3 className="text-3xl font-bold text-white mb-4">
-                Uma jornada de autoconhecimento
-              </h3>
-              <p className="text-white/90 text-xl leading-relaxed">
-                Cada conquista é construída no seu ritmo, com respeito ao seu tempo e às suas necessidades. O processo terapêutico é um caminho de descobertas que transforma não apenas sintomas, mas a forma como você se relaciona consigo mesmo e com o mundo.
-              </p>
-            </div>
-          </div>
+          <div className="bg-gradient-to-br from-[#3f1b2d] via-[#4d2438] to-[#5a2a40] rounded-3xl shadow-2xl relative overflow-hidden md:flex ">
+
+      <div className="md:w-1/2 w-full">
+        <img 
+          src="/Braga_results.jpg"
+          alt="Lucas Braga - Psicólogo"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#d7b189]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="relative md:w-1/2 w-full flex flex-col justify-center p-7 md:p-12 text-center md:text-left">
+        <h3 className="text-3xl md:text-4xl font-bold text-white mb-5 leading-tight">
+          Uma jornada de autoconhecimento
+        </h3>
+
+        <p className="text-white/90 text-lg md:text-xl leading-relaxed text-justify md:text-left">
+          Cada conquista é construída no seu ritmo, com respeito ao seu tempo e às suas necessidades. O processo terapêutico é um     caminho de descobertas que transforma não apenas sintomas, mas a forma como você se relaciona consigo mesmo e com o mundo.
+        </p>
+      </div>
+
+    </div>
+
         </motion.div>
       </div>
     </section>

@@ -35,21 +35,44 @@ export function Navbar() {
             : 'bg-[#3f1b2d]/80 backdrop-blur-sm'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="w-full px-4 md:px-8">
           <div className="flex items-center justify-between h-20">
             <a href="#home" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-full  flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+              <div className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                 <img src="/logo.png" alt="logo" />
               </div>
-              <div className="md:block">
+              <div>
                 <span className="text-[#f9f9f9] font-bold text-lg block leading-tight">Lucas Braga</span>
-                <span className="text-[#d7b189] text-xs">Psicólogo Cínico</span>
+                <span className="text-[#d7b189] text-xs">Psicólogo Clínico</span>
               </div>
             </a>
 
+            <div className="hidden md:flex items-center gap-1">
+              {menuItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="px-4 py-2 text-[#f9f9f9] hover:bg-[#f9f9f9]/10 rounded-lg transition-all duration-300 font-medium text-sm"
+                >
+                  {item.label}
+                </a>
+              ))}
+
+              <a
+                href="https://wa.me/5548996648123"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-[#d7b189] text-[#3f1b2d] font-semibold rounded-lg hover:bg-[#c9a076] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                Agendar Consulta
+              </a>
+            </div>
+
+            
+
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className=" p-2 text-[#f9f9f9] hover:bg-[#f9f9f9]/10 rounded-lg transition-all duration-300"
+              className="md:hidden p-2 text-[#f9f9f9] hover:bg-[#f9f9f9]/10 rounded-lg transition-all duration-300"
               aria-label="Menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -61,7 +84,7 @@ export function Navbar() {
       </nav>
 
       <div
-        className={`fixed inset-0 z-40  transition-all duration-300 ${
+        className={`fixed inset-0 z-40 md:hidden transition-all duration-300 ${
           isMobileMenuOpen ? 'visible' : 'invisible'
         }`}
       >
@@ -77,7 +100,7 @@ export function Navbar() {
             isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'
           }`}
         >
-          <div className="px-4 py-6 space-y-1 md:text-center">
+          <div className="px-4 py-6 space-y-1">
             {menuItems.map((item, index) => (
               <a
                 key={item.label}

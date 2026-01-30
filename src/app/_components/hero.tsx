@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
+import Particles from '../../components/Particles.jsx'
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,16 +12,41 @@ export function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#3f1b2d] shadow-2xl">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none ">
-        <div className="absolute top-20 right-10 w-64 h-64 bg-[#d7b189]/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#d7b189]/3 rounded-full blur-3xl" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-[#d7b189]/30 rounded-full animate-ping"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-[#d7b189]/40 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
-      </div>
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+  
+  <div style={{ width: '1080px', height: '1080px', position: 'relative' }}>
+  <Particles
+    particleCount={200}
+    particleSpread={10}
+    speed={0.1}
+    particleColors={["#ffffff","#ffffff","#ffffff"]}
+    moveParticlesOnHover={false}
+    particleHoverFactor={1}
+    alphaParticles={false}
+    particleBaseSize={100}
+    sizeRandomness={1}
+    cameraDistance={20}
+    disableRotation={false}
+  />
+</div>
 
-      {/* Mobile Layout */}
+  <div className="absolute top-20 right-10 w-64 h-64 bg-[#d7b189]/5 rounded-full blur-3xl animate-pulse" />
+
+  <div
+    className="absolute bottom-20 left-10 w-96 h-96 bg-[#d7b189]/3 rounded-full blur-3xl"
+    style={{ animationDelay: '1s' }}
+  />
+
+  <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-[#d7b189]/30 rounded-full animate-ping" />
+
+  <div
+    className="absolute top-1/3 right-1/3 w-1 h-1 bg-[#d7b189]/40 rounded-full animate-ping"
+    style={{ animationDelay: '0.5s' }}
+  />
+</div>
+
+
       <div className="lg:hidden flex flex-col items-center justify-center w-full px-6 py-16 relative z-10 min-h-screen">
-        {/* Background with decorative curves */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-2/3 bg-gradient-to-b from-[#d7b189]/10 to-transparent rounded-b-[100%]"></div>
           <div className="absolute bottom-0 right-0 w-full h-1/2 bg-gradient-to-t from-[#d7b189]/5 to-transparent rounded-t-[80%]"></div>
@@ -31,12 +57,12 @@ export function Hero() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
           }`}
         >
-          <div className="relative w-72 h-80">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#d7b189]/20 via-[#d7b189]/10 to-transparent rounded-[40%_60%_70%_30%/60%_30%_70%_40%] animate-pulse"></div>
+          <div className="relative w-110 h-110 items-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#d7b189]/20 via-[#d7b189]/10 to-transparent rounded-[40%_60%_70%_30%/60%_30%_70%_40%] "></div>
             
-            <div className="relative w-full h-full overflow-hidden">
+            <div className="relative w-115 h-115 overflow-hidden ">
               <img 
-                src="/IMG_3181.JPEG"
+                src="/Braga_hero_mobile.png"
                 alt="Lucas Braga - Psicólogo"
                 className="w-full h-full rounded-full shadow-2xl object-center object-cover"
                 
@@ -142,7 +168,7 @@ export function Hero() {
       <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-1/2 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-l from-[#3f1b2d]/40 via-[#3f1b2d]/20 to-transparent z-10"></div>
         <img 
-          src="/IMG_3181.JPEG"
+          src="/Braga_hero.jpg"
           alt="Psicoterapia e bem-estar emocional"
           className="w-full h-full object-cover object-left"
           style={{

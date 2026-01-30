@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Calendar, Monitor, Target, FileCheck, TrendingUp } from 'lucide-react';
+import { Calendar, Monitor, Target, FileCheck, TrendingUp, ArrowRight } from 'lucide-react';
 
 export default function HowWorks() {
   const etapas = [
@@ -104,6 +104,16 @@ export default function HowWorks() {
                 </motion.div>
               );
             })}
+
+                        <a
+                href="https://wa.me/554831978120"
+                target='blank'
+                className="group inline-flex items-center text-center gap-3 bg-[#d7b189] hover:bg-[#c9a378] text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl hover:shadow-[#d7b189]/50 transition-all duration-300 hover:scale-105"
+              >
+                <Calendar className="w-6 h-6" />
+                  Agende sua sessão inicial
+                <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+              </a>
           </div>
         </div>
 
