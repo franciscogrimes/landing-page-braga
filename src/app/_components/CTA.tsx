@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, MessageCircle, Calendar, Mail, Phone } from 'lucide-react';
+import { ArrowRight, MessageCircle, Calendar, Mail } from 'lucide-react';
 import Particles from '../../components/Particles.jsx'
 
 
@@ -13,56 +13,41 @@ export default function CTAFinal() {
   ];
 
   return (
-    <section id='contato' className="relative py-24 bg-gradient-to-br from-[#3f1b2d] via-[#4d2438] to-[#5a2a40] overflow-hidden">
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-24">
-          <path d="M0,0 Q600,60 1200,0 L1200,120 L0,120 Z" fill="#ffffff"></path>
-        </svg>
-      </div>
+    <section id='contato' className="relative py-24 bg-[#3f1b2d] overflow-hidden">
+      {/* Sem wave superior — a seção já começa no mesmo bg-[#3f1b2d] dos depoimentos */}
+
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-  <Particles
-    className="w-full h-full"
-    particleCount={200}
-    particleSpread={10}
-    speed={0.1}
-    particleColors={["#ffffff", "#ffffff", "#ffffff"]}
-    moveParticlesOnHover={false}
-    particleHoverFactor={1}
-    alphaParticles={false}
-    particleBaseSize={100}
-    sizeRandomness={1}
-    cameraDistance={20}
-    disableRotation={false}
-  />
-</div>
+        <Particles
+          className="w-full h-full"
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleColors={["#ffffff", "#ffffff", "#ffffff"]}
+          moveParticlesOnHover={false}
+          particleHoverFactor={1}
+          alphaParticles={false}
+          particleBaseSize={100}
+          sizeRandomness={1}
+          cameraDistance={20}
+          disableRotation={false}
+        />
+      </div>
 
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
+          animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-0 left-0 w-96 h-96 bg-[#d7b189] rounded-full blur-3xl"
         />
         <motion.div
-          animate={{
-            scale: [1, 1.3, 1],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1
-          }}
+          animate={{ scale: [1, 1.3, 1], opacity: [0.1, 0.2, 0.1] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"
         />
       </div>
+
+      {/* Divisor decorativo sutil — linha dourada fina no topo */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-[#d7b189]/40" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
@@ -86,14 +71,12 @@ export default function CTAFinal() {
             </motion.div>
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Se você busca um processo psicológico{' '}
-              <span className="text-[#d7b189]">sério, profundo</span>
-              <br />
-              e baseado em evidências
+              Dê o primeiro passo.{' '}
+              <span className="text-[#d7b189]">É mais simples do que parece.</span>
             </h2>
-            
+
             <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed">
-              Estou aqui para caminhar com você nessa jornada de transformação
+              Manda uma mensagem pelo WhatsApp. É direto comigo — sem formulário, sem lista de espera.
             </p>
 
             <motion.div
@@ -105,11 +88,12 @@ export default function CTAFinal() {
             >
               <a
                 href="https://wa.me/554831978120"
-                target='blank'
+                target='_blank'
+                rel="noreferrer"
                 className="group inline-flex items-center gap-3 bg-[#d7b189] hover:bg-[#c9a378] text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl hover:shadow-[#d7b189]/50 transition-all duration-300 hover:scale-105"
               >
                 <Calendar className="w-6 h-6" />
-                Agende sua sessão inicial
+                Falar com Lucas pelo WhatsApp
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </a>
             </motion.div>
@@ -124,7 +108,7 @@ export default function CTAFinal() {
             <p className="text-center text-white/80 mb-8 text-lg">
               Ou entre em contato diretamente por:
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
               {formasContato.map((forma, index) => {
                 const Icon = forma.icon;
@@ -132,7 +116,8 @@ export default function CTAFinal() {
                   <motion.a
                     key={index}
                     href={forma.link}
-                    target='blank'
+                    target='_blank'
+                    rel="noreferrer"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -160,7 +145,7 @@ export default function CTAFinal() {
           >
             <div className="inline-block bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
               <p className="text-white/90 text-lg leading-relaxed max-w-2xl">
-                A primeira sessão é um momento de acolhimento, onde conversaremos sobre suas necessidades, expectativas e construiremos juntos o melhor caminho para você.
+                A primeira sessão é uma conversa: você entende como o processo funciona e decide se quer continuar. Sem compromisso.
               </p>
             </div>
           </motion.div>

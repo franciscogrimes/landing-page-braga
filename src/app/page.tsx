@@ -11,6 +11,7 @@ import WhoIs from "./_components/whoIs";
 import CTAFinal from "./_components/CTA";
 import Navbar from "./components/Navbar";
 import { ButtonWhats } from "./_components/buttonWhats";
+import { Depoiments } from "./_components/depoiments";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <WhoIs />
       <HowWorks />
       <Results />
+      <Depoiments />
       <CTAFinal />
       {/* <Services />
       <Products />

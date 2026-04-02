@@ -45,41 +45,23 @@ export function Approach() {
     {
       titulo: "TCC — Terapia Cognitivo-Comportamental",
       descricao:
-        "Clareza, estrutura e mudança de padrões de pensamento e comportamento.",
+        "Identifica os padrões de pensamento que alimentam sofrimento e te ensina a reagir de formas diferentes — com clareza, não com impulso.",
     },
     {
       titulo: "ACT — Terapia de Aceitação e Compromisso",
       descricao:
-        "Flexibilidade psicológica e ações alinhadas aos próprios valores.",
+        "Em vez de lutar contra o que você sente, você aprende a se mover na direção do que importa para você. Flexibilidade psicológica de verdade.",
     },
     {
       titulo: "DBT — Terapia Comportamental Dialética",
       descricao:
-        "Regulação emocional e desenvolvimento de habilidades para a vida.",
+        "Para quem sente emoções de forma intensa: as habilidades do DBT criam um amortecedor entre o que você sente e o que você faz.",
     },
     {
       titulo: "Modelos Baseados em Processos",
       descricao:
-        "Foco nos processos que realmente geram mudança terapêutica.",
+        "Foco nas causas reais da mudança — não só nos sintomas. Porque o que funciona para uma pessoa pode não funcionar para outra.",
     },
-  ]
-
-  const casos = [
-    "Ansiedade e preocupação excessiva",
-    "Depressão e desânimo",
-    "Dificuldades nos relacionamentos",
-  ]
-
-  const casos_dois = [
-    "Baixa autoestima e autocrítica",
-    "Trauma e eventos do passado",
-    "Transições de vida",
-  ]
-
-  const casos_tres = [
-    "Desregulação emocional",
-    "Perda de propósito",
-    "Conflitos internos",
   ]
 
   return (
@@ -127,7 +109,7 @@ export function Approach() {
                 <h3 className="text-2xl font-bold text-center">
                   {item.titulo}
                 </h3>
-                <p className="text-center leading-relaxed">
+                <p className="text-justify leading-relaxed">
                   {item.descricao}
                 </p>
               </div>
