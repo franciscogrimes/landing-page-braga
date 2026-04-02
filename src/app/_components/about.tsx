@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image";
 import { motion } from "motion/react";
-import { WaveDivider } from "../components/WaveDivider"
 
 
 export function About() {
@@ -101,31 +100,7 @@ export function About() {
       <div className="absolute top-20 left-10 w-32 h-32 bg-[#F7F5EF]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-[#3f1b2d]/10 rounded-full blur-3xl"></div>
 
-                
-           <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-            <svg 
-              className="relative block w-full h-16 md:h-24" 
-              viewBox="0 0 1200 120" 
-              preserveAspectRatio="none"
-            >
-              <motion.path 
-                d="M0,60 C300,100 600,20 900,60 C1050,80 1150,40 1200,60 L1200,120 L0,120 Z" 
-                fill="#3f1b2d"
-                initial={{ pathLength: 0, opacity: 0 }}
-                whileInView={{ pathLength: 1, opacity: 1 }}
-                transition={{ duration: 1.5, ease: "easeInOut" }}
-              />
-              <motion.path 
-                d="M0,80 C300,60 600,100 900,80 C1050,70 1150,90 1200,80 L1200,120 L0,120 Z" 
-                fill="#3f1b2d"
-                opacity="0.5"
-                initial={{ pathLength: 0, opacity: 0 }}
-                whileInView={{ pathLength: 1, opacity: 0.5 }}
-                transition={{ duration: 1.8, ease: "easeInOut", delay: 0.2 }}
-              />
-            </svg>
-          </div>
-          
+                    
     </section>
   );
 }

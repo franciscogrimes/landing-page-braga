@@ -5,11 +5,12 @@ import { Check, X } from 'lucide-react';
 
 export default function WhoIs() {
   const beneficios = [
-    'profundidade e método',
-    'compreensão madura dos próprios padrões',
-    'autonomia emocional',
-    'relações mais estáveis e conscientes'
-  ];
+    'Profundidade e método — não só desabafo',
+    'Compreensão real dos próprios padrões emocionais',
+    'Autonomia emocional crescente ao longo do processo',
+    'Relações mais estáveis e conscientes',
+    'Um processo com ciência por trás, adaptado ao seu momento'
+  ]
 
   return (
     <section id='quem-e' className="relative py-24 bg-[#f9f9f9] overflow-hidden">
@@ -30,7 +31,7 @@ export default function WhoIs() {
           <div className="w-24 h-1 bg-[#d7b189] mx-auto mb-12" />
 
           <p className="text-xl text-gray-700 mb-12 text-center">
-            Este atendimento é para <span className="font-semibold text-[#3f1b2d]">adultos</span> que buscam:
+            Este atendimento é para <span className="font-semibold text-[#3f1b2d]">adultos que querem ir além do raso.</span>
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-16">
@@ -50,28 +51,6 @@ export default function WhoIs() {
               </motion.div>
             ))}
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="bg-gradient-to-br from-[#3f1b2d] to-[#5a2a40] p-8 rounded-3xl shadow-2xl"
-          >
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-                <X className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h3 className="text-[#d7b189] font-semibold text-xl mb-2">
-                  Não é para você se:
-                </h3>
-                <p className="text-white/90 text-lg leading-relaxed">
-                  Procura soluções rápidas ou sem envolvimento no processo.
-                </p>
-              </div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
 

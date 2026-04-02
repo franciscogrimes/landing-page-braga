@@ -8,25 +8,25 @@ export default function Results() {
     {
       icon: Shield,
       titulo: 'Estabilidade emocional',
-      descricao: 'Desenvolva equilíbrio interno e maior controle sobre suas reações',
+      descricao: 'Você para de reagir no automático e começa a responder com consciência.',
       cor: 'from-blue-500 to-blue-600'
     },
     {
       icon: Sparkles,
       titulo: 'Identidade fortalecida',
-      descricao: 'Fortaleça sua essência e faça escolhas mais alinhadas com quem você é',
+      descricao: 'Você entende o que quer — e para de tomar decisões baseadas no medo ou na aprovação dos outros.',
       cor: 'from-purple-500 to-purple-600'
     },
     {
       icon: Heart,
       titulo: 'Menos ansiedade e culpa',
-      descricao: 'Reduza ansiedade, culpa e autocrítica para viver com mais leveza',
+      descricao: 'A ansiedade deixa de ser o centro. Você aprende a funcionar apesar dela — até que ela diminua.',
       cor: 'from-rose-500 to-rose-600'
     },
     {
       icon: Users,
       titulo: 'Relacionamentos seguros',
-      descricao: 'Construa vínculos mais saudáveis, maduros e autênticos',
+      descricao: 'Menos conflito, mais clareza. Você aprende a se posicionar sem se fechar.',
       cor: 'from-emerald-500 to-emerald-600'
     },
     {
@@ -59,8 +59,8 @@ export default function Results() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold text-[#3f1b2d] mb-4">
-            Resultados do processo
+          <h2 className="text-4xl font-bold text-[#3f1b2d] mb-4">
+            O que muda quando o processo funciona
           </h2>
           <div className="w-24 h-1 bg-[#d7b189] mx-auto mb-6" />
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

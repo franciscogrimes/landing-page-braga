@@ -9,7 +9,7 @@ export default function HowWorks() {
       icon: Calendar,
       titulo: 'Sessões individuais',
       descricao: '50 minutos dedicados exclusivamente a você',
-      detalhe: 'online ou presenciais'
+      detalhe: 'A primeira sessão é só uma conversa — sem formulários longos, sem compromisso de continuidade.'
     },
     {
       icon: TrendingUp,
@@ -111,13 +111,12 @@ export default function HowWorks() {
                 className="group inline-flex items-center text-center gap-3 bg-[#d7b189] hover:bg-[#c9a378] text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl hover:shadow-[#d7b189]/50 transition-all duration-300 hover:scale-105"
               >
                 <Calendar className="w-6 h-6" />
-                  Agende sua sessão inicial
+                  Quero marcar minha primeira sessão
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </a>
           </div>
         </div>
 
-        {/* CTA inline */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
