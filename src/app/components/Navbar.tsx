@@ -41,9 +41,10 @@ export function Navbar() {
               <div className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                 <img src="/logo.png" alt="logo" />
               </div>
-              <div>
+              <div className='flex flex-col'>
                 <span className="text-[#f9f9f9] font-bold text-lg block leading-tight">Lucas Braga</span>
                 <span className="text-[#d7b189] text-xs">Psicólogo Clínico</span>
+                <span className="text-[#d7b189] text-xs">CRP 12/30679</span>
               </div>
             </a>
 
@@ -59,12 +60,12 @@ export function Navbar() {
               ))}
 
               <a
-                href="https://wa.me/5548996648123"
+                href="https://wa.me/554831978120"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-[#d7b189] text-[#3f1b2d] font-semibold rounded-lg hover:bg-[#c9a076] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Agendar Consulta
+                Conversar com Lucas
               </a>
             </div>
 
@@ -114,13 +115,13 @@ export function Navbar() {
             ))}
             
             <a
-              href="https://wa.me/5548996648123"
+              href="https://wa.me/554831978120"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block mt-4 px-6 py-3 bg-[#d7b189] text-[#3f1b2d] font-semibold rounded-lg hover:bg-[#c9a076] transition-all duration-300 text-center shadow-lg"
             >
-              Agendar Consulta
+              Conversar com Lucas
             </a>
           </div>
         </div>

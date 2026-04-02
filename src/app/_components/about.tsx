@@ -50,16 +50,16 @@ export function About() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <p className="text-xl lg:text-2xl text-/90 leading-relaxed md:leading-relaxed">
-              Sou psicólogo clínico com atuação baseada em evidências, integrando 
-              <span className="font-semibold text-"> TCC, ACT e DBT</span>.
+            <p className="text-xl lg:text-2xl text-/90 leading-relaxed md:leading-relaxed text-justify">
+              Sou Lucas Braga, psicólogo clínico (CRP 12/30679).
             </p>
-            
-            <p className="text-xl lg:text-2xl text-/90 leading-relaxed md:leading-relaxed">
-              Trabalho com 
-              <span className="font-semibold text-"> regulação emocional, padrões afetivos, autoestima, 
-              produtividade emocional e relacionamentos</span>, sempre com um olhar 
-              humano, estruturado e orientado a mudanças sustentáveis.
+
+            <p className="text-xl lg:text-2xl text-/90 leading-relaxed text-justify md:leading-relaxed">
+              Trabalho com pessoas que já tentaram entender a si mesmas — leram, refletiram, talvez até fizeram terapia antes — mas ainda se encontram presas nos mesmos padrões.
+            </p>
+
+            <p className="text-xl lg:text-2xl text-/90 leading-relaxed text-justify md:leading-relaxed">
+              Minha abordagem combina TCC, ACT e DBT. Não porque são siglas, mas porque têm décadas de pesquisa mostrando que funcionam. O processo é técnico e profundo — mas nunca frio. Você não vai encontrar respostas genéricas aqui.
             </p>
             
             <motion.div 
@@ -69,7 +69,7 @@ export function About() {
               transition={{ duration: 0.8, delay: 0.5 }}
             >
               <div className="absolute -inset-4 bg-gradient-to-r from-[#3f1b2d]/5 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <p className="relative text-xl lg:text-2xl text- leading-relaxed md:leading-relaxed italic border-l-4 border-[#3f1b2d]/30 pl-4 py-2">
+              <p className="relative text-xl lg:text-2xl text- leading-relaxed text-justify md:leading-relaxed italic border-l-4 border-[#3f1b2d]/30 pl-4 py-2">
                 Acredito em uma psicologia profunda e aplicável: 
                 nem rasa, nem inacessível. Clara, ética e transformadora.
               </p>

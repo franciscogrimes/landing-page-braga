@@ -75,7 +75,7 @@ export function Hero() {
           
           <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-[#f9f9f9]/95 backdrop-blur-md rounded-2xl px-6 py-3 shadow-xl border border-[#d7b189]/20 min-w-[200px]">
             <h3 className="text-lg font-bold text-[#3f1b2d] text-center">Lucas Braga</h3>
-            {/* <p className="text-[#d7b189] text-sm text-center font-medium">CRP XX/XXXXX</p> */}
+            <p className="text-[#d7b189] text-sm text-center font-medium">CRP 12/30679</p>
           </div>
         </div>
 
@@ -87,7 +87,7 @@ export function Hero() {
           <div className="flex flex-col gap-6 w-full max-w-lg text-center mt-8">
             <div className="relative">
               <p className="text-base text-[#f9f9f9]/90 leading-relaxed font-medium">
-                Transforme padrões emocionais e construa uma vida mais estável, consciente e autêntica.
+                Psicoterapia baseada em evidências (TCC, ACT e DBT) para quem quer mudança real, não só insight. 
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ export function Hero() {
             className="group relative px-8 py-4 bg-[#d7b189] text-[#3f1b2d] font-semibold rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-base text-center"
           >
             <span className="relative z-10 flex items-center justify-center gap-2">
-              Agendar Avaliação Inicial
+              Quero conversar com Lucas
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-[#d7b189] to-[#c9a076] opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -122,7 +122,7 @@ export function Hero() {
           }`}
         >
           <h1 className="w-auto text-3xl md:text-5xl font-bold text-[#f9f9f9]">
-            Regulação emocional, Autonomia psicológica e Relacionamentos mais estáveis
+            Você se conhece. E ainda assim repete os mesmos padrões
           </h1>
         </div>
         
@@ -134,7 +134,7 @@ export function Hero() {
           <div className="relative group">
             <div className="absolute -inset-4 bg-[#f9f9f9]/5 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <p className="relative text-lg md:text-xl lg:text-2xl text-[#f9f9f9]/90 leading-relaxed md:leading-relaxed font-medium">
-              Transforme padrões emocionais e construa uma vida mais estável, consciente e autêntica.
+              Psicoterapia baseada em evidências (TCC, ACT e DBT) para quem quer mudança real, não só insight. 
             </p>
           </div>
         </div>
@@ -151,7 +151,7 @@ export function Hero() {
             className="group relative px-8 py-4 bg-[#d7b189] text-[#3f1b2d] font-semibold rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 text-lg md:text-xl text-center"
           >
             <span className="relative z-10 flex items-center justify-center gap-2">
-              Agendar Avaliação Inicial
+              Quero conversar com Lucas
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-[#d7b189] to-[#c9a076] opacity-0 group-hover:opacity-100 transition-opacity"></div>

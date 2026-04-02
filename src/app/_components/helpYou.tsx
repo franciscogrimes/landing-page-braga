@@ -41,21 +41,15 @@ export function HelpYou() {
   }, [emblaApi, onSelect])
 
   const casos = [
-    "Romper ciclos emocionais repetitivos",
-    "Reduzir ansiedade emocional e reatividade",
-    "Construir autoestima profunda e sustentável",
+    "Relacionamentos que terminam do mesmo jeito. Reações que você não consegue controlar. Autossabotagem na hora que mais importa.",
   ]
   
   const casos_dois = [
-    "Criar uma vida mais estável e consciente",
-    "Lidar com emoções e escolhas com maturidade",
-    "Desenvolver autocontrole emocional",
+    "Ansiedade de fundo constante. Sensação de que algo está errado, mas você não sabe o quê. Distância de si mesmo.",
   ]
   
   const casos_tres = [
-    "Entender e reorganizar padrões afetivos",
-    "Melhorar comunicação e expressão emocional",
-    "Sair da autossabotagem e procrastinação emocional",
+    "Conflitos frequentes. Dificuldade de confiar, de comunicar o que sente ou de estabelecer limites sem culpa.",
   ]
 
   const WaveDivider = ({ position = "top" }: { position?: "top" | "bottom" }) => {
@@ -90,7 +84,7 @@ export function HelpYou() {
       
       <div className="text-center py-10">
         <h2 className="text-5xl md:text-4xl lg:text-5xl font-bold text-[#f9f9f9]">
-          Como posso te ajudar?
+          Você se reconhece em algum desses padrões?
         </h2>
       </div>
 
