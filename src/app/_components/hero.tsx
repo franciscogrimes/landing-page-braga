@@ -76,6 +76,7 @@ export function Hero() {
           <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-[#f9f9f9]/95 backdrop-blur-md rounded-2xl px-6 py-3 shadow-xl border border-[#d7b189]/20 min-w-[200px]">
             <h3 className="text-lg font-bold text-[#3f1b2d] text-center">Lucas Braga</h3>
             <p className="text-[#d7b189] text-sm text-center font-medium">CRP 12/30679</p>
+
           </div>
         </div>
 
