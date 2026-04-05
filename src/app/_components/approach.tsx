@@ -45,7 +45,7 @@ export function Approach() {
     {
       titulo: "TCC — Terapia Cognitivo-Comportamental",
       descricao:
-        "Identifica os padrões de pensamento que alimentam sofrimento e te ensina a reagir de formas diferentes — com clareza, não com impulso.",
+        "Identifica os padrões de pensamento que alimentam sofrimento e te ensina a reagir de formas diferentes com clareza, não com impulso.",
     },
     {
       titulo: "ACT — Terapia de Aceitação e Compromisso",
@@ -60,7 +60,7 @@ export function Approach() {
     {
       titulo: "Modelos Baseados em Processos",
       descricao:
-        "Foco nas causas reais da mudança — não só nos sintomas. Porque o que funciona para uma pessoa pode não funcionar para outra.",
+        "Foco nas causas reais da mudança, não só nos sintomas. Porque o que funciona para uma pessoa pode não funcionar para outra.",
     },
   ]
 
