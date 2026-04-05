@@ -9,7 +9,7 @@ export default function HowWorks() {
       icon: Calendar,
       titulo: 'Sessões individuais',
       descricao: '50 minutos dedicados exclusivamente a você',
-      detalhe: 'A primeira sessão é só uma conversa — sem formulários longos, sem compromisso de continuidade.'
+      detalhe: 'A primeira sessão é só uma conversa, sem formulários longos, sem compromisso de continuidade.'
     },
     {
       icon: TrendingUp,
