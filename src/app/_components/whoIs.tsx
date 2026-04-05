@@ -5,7 +5,7 @@ import { Check, X } from 'lucide-react';
 
 export default function WhoIs() {
   const beneficios = [
-    'Profundidade e método — não só desabafo',
+    'Profundidade e método, não só desabafo',
     'Compreensão real dos próprios padrões emocionais',
     'Autonomia emocional crescente ao longo do processo',
     'Relações mais estáveis e conscientes',
