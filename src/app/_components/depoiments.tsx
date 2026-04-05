@@ -6,7 +6,7 @@ const depoimentos = [
   {
     numero: "01",
     quote:
-      "Sempre achei que terapia era só conversa. O processo com Lucas tem estrutura — cada sessão faz sentido e eu saio com algo concreto.",
+      "Sempre achei que terapia era só conversa. O processo com Lucas tem estrutura, cada sessão faz sentido e eu saio com algo concreto.",
     perfil: "Paciente, 29 anos",
     tempo: "processo de 6 meses",
   },
