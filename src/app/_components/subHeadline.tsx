@@ -12,7 +12,7 @@ export function SubHeadline(){
           >
 
             <h2 className="font-bold  text-2xl md:text-5xl p-5 text-justify">
-                "Você não precisa viver preso nos mesmos ciclos. Existe um processo claro, técnico e profundo para transformar sua relação com suas emoções — e com você mesmo."
+                "Você não precisa viver preso nos mesmos ciclos. Existe um processo claro, técnico e profundo para transformar sua relação com suas emoções e com você mesmo."
             </h2>
 
           </motion.div>
