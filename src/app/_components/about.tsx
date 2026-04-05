@@ -54,11 +54,11 @@ export function About() {
             </p>
 
             <p className="text-xl lg:text-2xl text-/90 leading-relaxed text-justify md:leading-relaxed">
-              Trabalho com pessoas que já tentaram entender a si mesmas — leram, refletiram, talvez até fizeram terapia antes — mas ainda se encontram presas nos mesmos padrões.
+              Trabalho com pessoas que já tentaram entender a si mesmas. Leram, refletiram, talvez até fizeram terapia antes, mas ainda se encontram presas nos mesmos padrões.
             </p>
 
             <p className="text-xl lg:text-2xl text-/90 leading-relaxed text-justify md:leading-relaxed">
-              Minha abordagem combina TCC, ACT e DBT. Não porque são siglas, mas porque têm décadas de pesquisa mostrando que funcionam. O processo é técnico e profundo — mas nunca frio. Você não vai encontrar respostas genéricas aqui.
+              Minha abordagem combina TCC, ACT e DBT. Não porque são siglas, mas porque têm décadas de pesquisa mostrando que funcionam. O processo é técnico e profundo, mas nunca frio. Você não vai encontrar respostas genéricas aqui.
             </p>
             
             <motion.div 
