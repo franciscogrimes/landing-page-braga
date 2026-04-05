@@ -14,7 +14,7 @@ export default function Results() {
     {
       icon: Sparkles,
       titulo: 'Identidade fortalecida',
-      descricao: 'Você entende o que quer — e para de tomar decisões baseadas no medo ou na aprovação dos outros.',
+      descricao: 'Você entende o que quer, e para de tomar decisões baseadas no medo ou na aprovação dos outros.',
       cor: 'from-purple-500 to-purple-600'
     },
     {
