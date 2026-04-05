@@ -76,7 +76,7 @@ export default function CTAFinal() {
             </h2>
 
             <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed">
-              Manda uma mensagem pelo WhatsApp. É direto comigo — sem formulário, sem lista de espera.
+              Manda uma mensagem pelo WhatsApp. É direto comigo! Sem formulário, sem lista de espera.
             </p>
 
             <motion.div
