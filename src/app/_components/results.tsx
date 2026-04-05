@@ -20,7 +20,7 @@ export default function Results() {
     {
       icon: Heart,
       titulo: 'Menos ansiedade e culpa',
-      descricao: 'A ansiedade deixa de ser o centro. Você aprende a funcionar apesar dela — até que ela diminua.',
+      descricao: 'A ansiedade deixa de ser o centro. Você aprende a funcionar apesar dela, até que ela diminua.',
       cor: 'from-rose-500 to-rose-600'
     },
     {
