@@ -28,7 +28,7 @@ export default function RootLayout({
         </Script>
 
         <!-- Meta Pixel Code -->
-          <script>
+          <Script>
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -39,7 +39,7 @@ export default function RootLayout({
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '1547928033719454');
           fbq('track', 'PageView');
-          </script>
+          </Script>
           <noscript><img height="1" width="1" style="display:none"
           src="https://www.facebook.com/tr?id=1547928033719454&ev=PageView&noscript=1"
           /></noscript>
